@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # install .bash_profile
-
+curl https://raw.githubusercontent.com/AaronTraas/osx-setup/master/bash_profile > ~/.bash_profile
 
 # install homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -39,7 +39,7 @@ brew install \
     wget \
     youtube-dl
 
-brew cask install \
+brew cask install --appdir=/Applications \
     1password \
     adobe-reader \
     alfred \
