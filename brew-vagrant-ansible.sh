@@ -9,14 +9,15 @@ if [[ $? != 0 ]] ; then
 fi
 
 # install caskroom
-brew tap phinze/cask && brew install brew-cask
+brew tap caskroom/cask && brew install brew-cask
 
 brew update && brew upgrade
 
 brew install \
+    git \
     ansible \
     ssh-copy-id
 
 brew cask install --appdir=/Applications \
-	vagrant \
+    vagrant \
     virtualbox

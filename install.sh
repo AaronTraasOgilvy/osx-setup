@@ -7,7 +7,7 @@ curl https://raw.githubusercontent.com/AaronTraas/osx-setup/master/bash_profile 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install caskroom
-brew tap phinze/cask && brew install brew-cask
+brew tap caskroom/cask && brew install brew-cask
 
 brew update && brew upgrade
 
