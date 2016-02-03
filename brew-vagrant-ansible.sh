@@ -14,7 +14,6 @@ brew tap caskroom/cask && brew install brew-cask
 brew update && brew upgrade
 
 brew install \
-    git \
     ansible \
     ssh-copy-id
 
