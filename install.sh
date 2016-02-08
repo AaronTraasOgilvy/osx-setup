@@ -3,8 +3,11 @@
 # install .bash_profile
 curl https://raw.githubusercontent.com/AaronTraas/osx-setup/master/bash_profile > ~/.bash_profile
 
-# install homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# install homebrew if not already installed
+which -s brew
+if [[ $? != 0 ]] ; then
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 
 # install caskroom
 brew tap caskroom/cask && brew install brew-cask
