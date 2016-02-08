@@ -27,15 +27,12 @@ brew install \
     go \
     htop-osx \
     imagemagick \
-    jpegoptim \
     lame \
     mercurial \
     ngrok \
     nmap \
     node \
     openssl \
-    optipng \
-    pngcrush \
     python \
     ssh-copy-id \
     webkit2png \
