@@ -3,13 +3,17 @@
 # install .bash_profile
 curl https://raw.githubusercontent.com/AaronTraas/osx-setup/master/bash_profile > ~/.bash_profile
 
+###############################################################################
+# Homebrew                                                                    #
+###############################################################################
+
 # install homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install caskroom
 brew tap phinze/cask && brew install brew-cask
 
-brew update && brew upgrade
+brew update && brew upgrade --all
 
 brew install \
     ack \
