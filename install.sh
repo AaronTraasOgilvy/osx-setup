@@ -7,11 +7,14 @@ curl https://raw.githubusercontent.com/AaronTraas/osx-setup/master/bash_profile 
 # Homebrew                                                                    #
 ###############################################################################
 
-# install homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# install homebrew if not already installed
+which -s brew
+if [[ $? != 0 ]] ; then
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 
 # install caskroom
-brew tap phinze/cask && brew install brew-cask
+brew tap caskroom/cask && brew install brew-cask
 
 brew update && brew upgrade --all
 
@@ -28,15 +31,12 @@ brew install \
     go \
     htop-osx \
     imagemagick \
-    jpegoptim \
     lame \
     mercurial \
     ngrok \
     nmap \
     node \
     openssl \
-    optipng \
-    pngcrush \
     python \
     ssh-copy-id \
     webkit2png \
