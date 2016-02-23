@@ -29,7 +29,7 @@ brew install \
     imagemagick \
     lame \
     mercurial \
-    ngrok \
+    homebrew/binary/ngrok2 \
     nmap \
     node \
     openssl \
