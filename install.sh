@@ -3,6 +3,10 @@
 # install .bash_profile
 curl https://raw.githubusercontent.com/AaronTraas/osx-setup/master/bash_profile > ~/.bash_profile
 
+###############################################################################
+# Homebrew                                                                    #
+###############################################################################
+
 # install homebrew if not already installed
 which -s brew
 if [[ $? != 0 ]] ; then
@@ -12,7 +16,7 @@ fi
 # install caskroom
 brew tap caskroom/cask && brew install brew-cask
 
-brew update && brew upgrade
+brew update && brew upgrade --all
 
 brew install \
     ack \
