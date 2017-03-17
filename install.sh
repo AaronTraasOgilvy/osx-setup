@@ -33,7 +33,7 @@ brew install \
     imagemagick \
     lame \
     mercurial \
-    homebrew/binary/ngrok2 \
+    ngrok \
     nmap \
     node \
     openssl \
@@ -51,13 +51,16 @@ brew cask install --appdir=/Applications \
     bartender \
     deeper \
     dropbox \
-    evernote \
+    firefox \
+    handbrake \
     hostbuddy \
+    imagealpha \
     imageoptim \
+    paw \
     slack \
     sourcetree \
     stay \
     transmit \
     vagrant-manager \
-	vagrant \
+    vagrant \
     virtualbox
