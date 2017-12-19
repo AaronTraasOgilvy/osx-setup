@@ -45,13 +45,11 @@ brew install \
 
 brew cask install --appdir=/Applications \
     1password \
-    adobe-reader \
     alfred \
     atom \
     bartender \
     deeper \
     dropbox \
-    firefox \
     handbrake \
     hostbuddy \
     imagealpha \
