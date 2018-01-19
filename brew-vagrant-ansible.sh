@@ -17,4 +17,5 @@ brew install \
 
 brew cask install --appdir=/Applications \
     vagrant \
+    vagrant-manager \
     virtualbox
