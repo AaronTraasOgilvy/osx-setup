@@ -18,7 +18,13 @@ This will prompt you to install the Xcode command-line tools. Follow the
 prompts.
 
 Once the command-line tools are properly installed, enter the following in the
-terminal (it will prompt you for your password one or more times):
+terminal to prompt Xcode to ask you to agree to license terms:
+
+```
+sudo xcodebuild -license
+```
+
+Then, terminal (it will prompt you for your password one or more times):
 
 ```
 curl -s https://raw.githubusercontent.com/AaronTraas/osx-setup/master/install.sh | /bin/bash -s
