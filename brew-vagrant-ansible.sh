@@ -7,7 +7,7 @@ if [[ $? != 0 ]] ; then
 fi
 
 # install caskroom
-brew tap caskroom/cask && brew install brew-cask
+brew tap caskroom/cask 
 
 brew update && brew upgrade
 
